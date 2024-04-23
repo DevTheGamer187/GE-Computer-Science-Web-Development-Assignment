@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    html{
+        text-align: center;
+        background-color: aqua;
+    }
+    .calculate{
+        margin: 100px;
+        border: 5px outset goldenrod;
+        background-color: yellow;
+        color: deeppink;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    #firstnum , #secondnum{
+        padding: 5px;
+        margin-left: 10px;
+        background-color: paleturquoise;
+        color:darkblue;
+    }
+    #plus,#minus,#multiply,#divide{
+        padding: 10px 20px 10px 20px;
+        font-size: xx-large;
+        margin: 10px;
+        background-color: pink;
+        border: 3px solid plum;
+        color: red;
+    }
+    #plus:hover,#minus:hover,#multiply:hover,#divide:hover{
+        background-color: lightsalmon;
+        border: 3px outset orange;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="">
+        <div class="calculate">
+            <p>First Number: <input type="number" id="firstnum"></p>
+            <p>Second Number: <input type="number" id="secondnum"></p>
+            <div class="buttons">
+                <button id="plus">+</button>
+                <button id="minus">-</button>
+                <button id="multiply">*</button>
+                <button id="divide">/</button>
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+    let numa = document.getElementById("firstnum")
+    let numb = document.getElementById("secondnum")
+    function add(){
+        let sum=0
+        sum=Number(numa.value)+Number(numb.value)
+        alert(`Your Sum is:- ${sum}`)
+    }
+    plus.addEventListener('click',add)
+    function differ(){
+        let difference=0
+        difference=Number(numa.value)-Number(numb.value)
+        alert(`Your Difference is:- ${difference}`)
+    }
+    minus.addEventListener('click',differ)
+    function multiplication(){
+        let multiplication=0
+        multiplication=Number(numa.value)*Number(numb.value)
+        alert(`Your Multiplication is:- ${multiplication}`)
+    }
+    multiply.addEventListener('click',multiplication)
+    function division(){
+        let division=0
+        division=Number(numa.value)/Number(numb.value)
+        alert(`Your Division is:- ${division}`)
+    }
+    divide.addEventListener('click',division)
+    function colornuma(){
+        numa.style="background-color:blanchedalmond"
+    }
+    function colornumb(){
+        numb.style="background-color:blanchedalmond"
+    }
+    function colorbnuma(){
+        numa.style="background-color:Violet"
+    }
+    function colorbnumb(){
+        numb.style="background-color:Violet"
+    }
+    numa.addEventListener('focus',colornuma)
+    numb.addEventListener('focus',colornumb)
+    numa.addEventListener('blur',colorbnuma)
+    numb.addEventListener('blur',colorbnumb)
+</script>
+</html>

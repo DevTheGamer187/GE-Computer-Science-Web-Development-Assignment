@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of multiplication</title>
+</head>
+<style>
+    html{
+        text-align: center;
+        background-color: aqua;
+    }
+    #table{
+        margin: 100px;
+        border: red outset 5px;
+        display: inline-block;
+        padding: 30px;
+        color: darkorchid;
+        background-color: yellow;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+</style>
+<body>
+    <p id="table"></p>
+</body>
+<script>
+    let entry = document.getElementById("table")
+    let a= prompt("enter number for table")
+    for(let i=1;i<=10;i++){
+        console.log(a, "x", i ,"=",i*a)
+        entry.innerHTML+=a+"x"+i+"="+i*a+"<br>"
+    }
+    console.log(document.write())
+</script>
+</html>

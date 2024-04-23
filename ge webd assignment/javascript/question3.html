@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus text box</title>
+</head>
+<style>
+    html{
+        text-align: center;
+        background-color: aquamarine;
+    }
+    .box{
+        margin:100px;
+        color:peru;
+        border: 5px outset palevioletred;
+        padding: 50px;
+        display: inline-block;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    #textbox{
+        padding: 10px;
+        border: 2px outset rebeccapurple;
+    }
+</style>
+<body>
+    <form action="">
+        <div class="box">
+        <p>CLICK ON THIS BOX WILL CHANGE ITS COLOR</p>
+        <br>
+        <input type="text" name="" id="textbox" placeholder="Text-Box">
+        <p>IF YOU CLICK ANYWHERE AFTERWARDS IT WILL RESTORE THE COLOR</p>
+        </div>
+    </form>
+</body>
+<script>
+    function focusbtn(){
+        textbox.style="background-color:aqua"
+    }
+    function lossbtn(){
+        textbox.style=""
+    }
+    textbox.addEventListener('focus',focusbtn)
+    textbox.addEventListener('blur',lossbtn)
+</script>
+</html>

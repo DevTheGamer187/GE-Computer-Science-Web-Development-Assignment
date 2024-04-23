@@ -1,0 +1,201 @@
+html{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    top: 0;
+}
+@keyframes colorchange {
+    0%{
+        color: blue;
+    }
+    10%{
+        color: blueviolet;
+    }
+    20%{
+        color: palevioletred;
+    }
+    30%{
+        color: red;
+    }
+    40%{
+        color: lightsalmon;
+    }
+    50%{
+        color: orange;
+    }
+    60%{
+        color: brown;
+    }
+    70%{
+        color: darkred;  
+    }
+    80%{
+        color: darkmagenta;
+    }
+    90%{
+        color: darkblue;
+    }
+    100%{
+        color: blue;
+    }
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    background-color: lightgoldenrodyellow;
+}
+.heading{
+    text-align: center;
+    color: rebeccapurple;
+    text-decoration: underline;
+    background-color: peachpuff;
+    border: 1px solid black;
+    overflow: hidden;
+    animation: colorchange 5s infinite;
+    border-radius: 10px;
+}
+.headline{
+    margin-top: 35px;
+}
+#logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    float: left;
+    width: 100px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+nav{
+    margin-top: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    top:135px;
+    position: sticky;
+    background-color: aqua;
+}
+.dropdown{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.navbut{
+    color: blue;
+    background-color: lightskyblue;
+    padding: 10px 80px 10px 80px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.dropdown-options{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+}
+.navbut:hover + .dropdown-options{
+    display: block;
+    border-radius: 10px;
+}
+.navbut:hover{
+    background-color: yellow;
+}
+.dropdown:hover .dropdown-options{
+    display: block;
+    border-radius: 10px;
+}
+.navlink{
+    display: block;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    text-decoration: none;
+    padding: 10px;
+}
+.navlink:hover{
+    background-color: aquamarine;
+}
+.startline{
+    margin-top: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:darkred;
+    padding: 50px;
+    background-color: plum;
+    border-radius: 10px;
+    border: 5px solid purple;
+}
+.content{
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    color: brown;
+    border-radius: 5px;
+}
+figure{
+    max-width: 33%;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+img{
+    width: 200px;
+}
+.teacher{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.profhead{
+    text-decoration: underline;
+    animation: colorchange 2s infinite;
+}
+.profile{
+    border: 1px solid yellowgreen;
+    box-shadow: 1px 1px 1px gray;
+    background-color: yellow;
+    margin-top: 5px;
+}
+.profilelink{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.courselist{
+    list-style-type: none;
+    color: darkred;
+    font-weight: bolder;
+    font-size: large;
+}
+.detailpara{
+    color: green;
+    border: 2px solid lightgreen;
+    padding: 10px;
+}
+.foot{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+.tensorlogo{
+    margin-top: 10px;
+    float: left;
+    margin-left: 100px;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+.societydetails{
+    display: inline;
+    color: darkolivegreen;
+    font-weight: bolder;
+    font-size: large;
+}
+.tensorlist{
+    list-style-type: none;
+    color: darkolivegreen;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+}

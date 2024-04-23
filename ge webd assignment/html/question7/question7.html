@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="4345551.png">
+    <title>REGISTRATION FORM</title>
+    <style>
+        .name{
+            text-align: center;
+            color: red;
+            text-decoration: underline;
+        }
+        .nationality{
+            color: red;
+        }
+        form{
+            color: red;
+            text-decoration: underline;
+            padding: 10px;
+        }
+        html{
+            background-image: url("registerform.jpg");
+            background-color: aqua;
+            text-align: center;
+        }
+        @keyframes title {
+        0%{
+            color:blue
+        }
+        20%{
+            color: lightblue;
+        }
+        40%{
+            color: lightcoral;
+        }
+        60%{
+            color:red;
+        }
+        80%{
+            color: darkred; 
+        }
+        100%{
+            color: brown;
+        }
+    }
+    h1{
+        text-decoration: underline;
+        animation: title 2s infinite;
+    }
+    .main{
+        border: 1px solid red;
+        display: inline-block;
+        background-color:lightgoldenrodyellow;
+        box-shadow: 10px 10px 30px grey;
+        padding: 20px;
+    }
+    .subbutton{
+        box-shadow: 3px 3px 5px grey;
+        transition-duration: 0.4s;
+        margin: 10px;
+    }
+    .subbutton:hover{
+        background-color: orange;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <form action="form2.html" autocomplete="on" method="get" id="registerform">
+        <div class="main">
+        <h1>PERSONAL INFORMATION</h1>
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+        <p class="name" id="firstname">First Name:- <input type="text" name="name" id="name" required></p>
+        <p class="name" id="lastname">Last Name:- <input type="text" name="Lname" id="Lname" required></p>
+        <p class="name" id="Fname">Father's Name:- <input type="text" name="Fname" id="Fname" required></p>
+        <p class="name" id="Mname">Mother's Name:- <input type="text" name="Mname" id="Mname" required></p>
+        <p class="dateofbirth">DOB <input type="date" name="DOB" id="DOB" required></p>
+        <p class="name">GENDER   
+        <p class="name" id="male">MALE:- <input type="radio" name="gender" id="male" required>
+        FEMALE:- <input type="radio" name="gender" id="female" required></p>
+        </p>
+        </fieldset>
+        <p class="nationality">NATIONALITY:- <select name="nationality" id="nationality" disabled>
+            <option value="INDIAN">INDIAN</option>
+            <option value="AMERICAN">AMERICAN</option>
+            <option value="BRITISH">BRITISH</option>
+        </select></p>
+        <p class="address">ADDRESS:- <textarea name="address" id="address" cols="30" rows="3"></textarea></p>
+        <p class="email">EMAIL:- <input type="email" name="email" id="email" required></p>
+        <p class="number" id="pno">PHONE NUMBER:- <input type="tel" name="telno" id="telno" pattern="[0-9]{10}" required></p>
+        <p class="number" id="telno">TELEPHONE NUMBER (OPTIONAL):- <input type="tel" name="telnoo" id="telnoo"></p>
+        <p class="dropdown">COURSE:- 
+            <select name="courses" id="">
+                <option value="">Select Your Course</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="B.Com">B.Com</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+            </select>
+        </p>
+        <p class="declaration">
+            <input type="checkbox" required>I hereby declare that the information given by me in the Application is true, complete and correct to the best of my knowledge and belief and that nothing has been concealed or distorted.
+        </p>
+        <input type="submit" class="subbutton" id="submit">
+        <input type="reset" value="Reset" class="subbutton">
+        </div>
+    </form>
+</body>
+<script>
+    let subx = document.getElementById("registerform");
+    subx.addEventListener("submit",msg);
+
+    function msg(){
+        alert("Your FORM has been submitted \nPress OK to continue \nRemember to fill all particulars carefully!!!");
+    }
+</script>
+</html>

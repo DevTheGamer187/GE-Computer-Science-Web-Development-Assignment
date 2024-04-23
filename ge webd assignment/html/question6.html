@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question6</title>
+    <style>
+        html{
+            background-color: aliceblue;
+        }
+        ol{
+            list-style-type: lower-alpha;
+        }
+        li{
+            padding-left: 10px;
+        }
+        header{
+            text-align: center;
+            text-decoration: underline; 
+            color:blue; 
+        }
+        .navbar{
+            text-align: center;
+        }
+        nav{
+            border: 1px solid blue; 
+            display: inline-block;
+            padding: 30px;
+            background-color: whitesmoke;
+        }
+        a{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            font-size: large;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: aliceblue;
+        }
+        a:hover{
+            background-color: wheat;
+            color: red;
+        }
+        .options{
+            display: inline-block;
+        }
+        .details{
+            display: none;
+            position: absolute;
+        }
+        a:hover + .details{
+            display: block;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            color: indianred;
+            background-color: white;
+            font-weight: bold;
+        }
+        .content{
+            text-align: center;
+        }
+        .conthead{
+            color: blue;
+            text-decoration: underline;
+        }
+        .contdetails{
+            color: red;
+        }
+        summary{
+            text-decoration: underline;
+        }
+        footer{
+            border: 2px solid brown;
+            padding: 10px;
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="question" style="border: 5px solid green;">
+        <p><b>Question 6</b>:- Create an HTML page for demonstrating the following semantic tags.
+            <div>
+                <ol>
+                    <li>Header</li>
+                    <li>Nav</li>
+                    <li>Main</li>
+                    <li>Section</li>
+                    <li>Footer</li>
+                    <li>Details</li>
+                    <li>Summary</li>
+                    <li>Figure</li>
+                    <li>Figure Caption</li>
+                </ol>
+            </div>
+        </p>
+    </div>
+    <header>
+        <h1>DEMONSTRATING SEMANTIC TAGS</h1>
+    </header>
+    <div class="navbar">
+        <nav>
+            <div class="options">
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">What?</a>
+                <div class="details">What are Semantic Tags?</div>
+            </div>
+            <div class="options">
+                <a href="https://www.thoughtco.com/why-use-semantic-html-3468271#:~:text=By%20adding%20semantic%20tags%20to,page%20and%20its%20content%20is.">Why?</a>
+                <div class="details">Why we use Semantic Tags?</div>
+            </div>
+            <div class="options">
+                <a href="https://www.semrush.com/blog/semantic-html5-guide/">Where?</a>
+                <div class="details">Where we use Semantic Tags?</div>
+            </div> 
+        </nav>
+    </div>
+    <main>
+        <section class="content">
+            <h2 class="conthead">Semantic Tags</h2>
+            <div class="contdetails">
+                <p>A semantic element clearly describes its meaning to both the browser and the developer.
+                    <figure>
+                        <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="">
+                        <figcaption>HERE IS A LAYOUT FOR SEMANTIC TAGS</figcaption>
+                    </figure>
+                    <details open>
+                        <summary>Examples of Semantic Tags</summary>
+                        <br>
+                        Examples of non-semantic elements: div and span - Tells nothing about its content.
+                        <br>
+                        Examples of semantic elements: form, table, and article - Clearly defines its content.
+                    </details>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Here we have seen the use of semantic tags while also learning semantic tags &#128514; &#128514; and here i am writing a footer &#128513;</p>
+    </footer>
+</body>
+</html>
