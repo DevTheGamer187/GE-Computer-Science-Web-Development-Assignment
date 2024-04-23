@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 3</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function isWeekEnd(date){
+                let day = date.getDay()
+                return day === 0 || day === 6
+            }
+            $("#check").click(function(){
+                let dateval = $("#date").val()
+                let newdate = new Date(dateval)
+                if(isNaN(newdate)){
+                    $("#output").html("No Date is Entered !!")
+                }
+                else if(isWeekEnd(newdate)){
+                    $("#output").html("The Date is a Weekend.")
+                }else{
+                    $("#output").html("Your Entered Date is not a weekend")
+                }
+                })
+        })
+    </script>
+</head>
+<style>
+    html{
+        background-color: aqua;
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        margin: 100px;
+        color: purple;
+    }
+    input{
+        padding: 20px;
+        background-color: palevioletred;
+        color: yellow;
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+    button{
+        padding: 30px;
+        font-size: xx-large;
+        font-weight: bolder;
+        background-color: plum;
+        display: block;
+        text-align: center;
+        margin: 50px;
+        color: brown;
+    }
+    button:hover{
+        background-color: blue;
+        color: red;
+    }
+</style>
+<body>
+    <form action="javascript:void(0)">
+        <h1>ENTER A DATE</h1>
+        <input type="date" name="date" id="date">
+        <button id="check">CHECK</button>
+        <h1 id="output"></h1>
+    </form>
+</body>
+</html>

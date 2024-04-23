@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 4</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#text").focus(function(){
+                $("#text").css("background-color","aqua")
+            })
+            $("#text").blur(function(){
+                $("#text").css("background-color","lightcoral")
+            })
+            $("#btn").click(function(){
+                alert("YOU CLICKED ON THIS BUTTON")
+            })
+            $("#btndbl").dblclick(function(){
+                alert("YOU DOUBLE CLICKED ON THIS BUTTON")
+            })
+            $("#form").submit(function(){
+                alert("CONGRATULATIONS !!! YOU HAVE SUBMITTED THE FORM")
+            })
+            $("#text").change(function(){
+                $("#changes").html("YOU TYPED SOMETHING")
+            })
+        })
+    </script>
+</head>
+<style>
+    html{
+        text-align: center;
+        background-color: violet;
+    }
+    div{
+        margin: 100px;
+        text-align: center;
+        display: inline-block;
+        border: 5px outset red;
+        padding: 50px;
+        box-shadow: 10px 10px 50px red;
+        background-color: lightsalmon;
+        color: darkred;
+    }
+    h3{
+        display: inline;
+    }
+    input{
+        display: block;
+        margin: 20px;
+        text-align: center;
+        background-color: pink;
+        border: 2px outset purple;
+    }
+    .butt{
+        padding: 10px;
+        background-color: palevioletred;
+        border: 3px outset violet;
+        color: yellow;
+    }
+    .butt:hover{
+        background-color: blue;
+        border: 3px solid blueviolet;
+        color: red;
+    }
+</style>
+<body>
+    <form action="#" id="form">
+        <div>
+            <h3>ENTER YOUR NAME:- </h3><input type="text" name="text" id="text" placeholder="Type Here">
+            <input type="button" class="butt" value="CLICK HERE" id="btn">
+            <input type="button" class="butt" value="DOUBLE CLICK HERE" id="btndbl">
+            <input type="submit" class="butt" value="CLICK HERE TO SUBMIT">
+            <h3 id="changes"></h3>
+        </div>
+    </form>
+</body>
+</html>

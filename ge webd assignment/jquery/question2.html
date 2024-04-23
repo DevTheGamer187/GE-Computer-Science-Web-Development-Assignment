@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 2</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".divcls").click(function(){
+                $(".divcls").html("YOU CLICKED ON DIV WITH CLASS !!")
+            })
+            $("#divid").click(function(){
+                $("#divid").html("YOU CLICKED ON DIV WITH ID!!!")
+            })
+            $("span").click(function(){
+                $("span").html("YOU CLICKED ON SPAN TAG!!!")
+            })
+            $("[alt|='#']").click(function(){
+                $("img").attr("src","click.jpg")
+                $("#caption").html("YOU CLICKED THE IMAGE !!!")
+            })
+        })
+    </script>
+</head>
+<style>
+    h1,h2,span,div,figure{
+        color: rebeccapurple;
+        margin: 50px;
+        text-align: center;
+        border: 2px solid rebeccapurple;
+        padding: 10px;
+        display: block;
+        overflow: auto;
+    }
+</style>
+<body>
+    <h1>TO DEMONSTRATE JQuery SELECTORS, I HAVE CREATED SOME HTML ELEMENTS BUT YOU HAVE TO READ THE CODE FOR CHECKING HOW I HAVE IMPLEMENTED THE JQuery SELECTORS IN JAVASCRIPT</h1>
+    <div class="divcls">THIS DIV HAVE A CLASS , CLICKING IT WILL CHANGE THE TEXT CONTENT</div>
+    <div id="divid">THIS DIV HAVE A ID , CLICKING IT WILL CHANGE THE TEXT CONTENT</div>
+    <span>THIS IS A SPAN TAG , CLICKING IT WILL CHANGE THE TEXT CONTENT</span>
+    <figure>
+        <img src="test.png" alt="#">
+        <figcaption><h3 id="caption">CLICKING THIS IMAGE WILL CHANGE IT</h3></figcaption>
+    </figure>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 5</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#link").mouseover(function(){
+                $("html").css("background-color","green")
+                $("#link").html('"I\'m green now"')
+                $("#link").css("color","yellow")
+            })
+            $("#link").mouseout(function(){
+                $("html").css("background-color","red")
+                $("#link").html('"I\'m red now"')
+                $("#link").css("color","yellow")
+            })
+        })
+    </script>
+</head>
+<style>
+    div{
+        text-align: center;
+        margin: 100px;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: blue;
+    }
+</style>
+<body>
+    <div>
+        <a id="link" href="https://kmc.du.ac.in" target="_blank">"It shows the mouse events"</a>
+    </div>
+</body>
+</html>

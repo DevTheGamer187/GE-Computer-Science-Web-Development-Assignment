@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question 1</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function()  {
+            $("#rbtn").click(function(){
+                $(".pg").css("color","red")
+                $(".pg").html("HEY YOU CHANGE THE COLOR TO RED !!!!!!")
+            })
+            $("#gbtn").click(function(){
+                $(".pg").css("color","green")
+                $(".pg").html("HEY YOU CHANGE THE COLOR TO GREEN !!!!!!")
+            })
+            $("#bbtn").click(function(){
+                $(".pg").css("color","blue")
+                $(".pg").html("HEY YOU CHANGE THE COLOR TO BLUE !!!!!!")
+            })
+            $("#mbtn").click(function(){
+                $(".pg").css("color","MAROON")
+                $(".pg").html("HEY YOU CHANGE THE COLOR TO MAROON !!!!!!")
+            })
+        });
+    </script>
+  </head>
+  <style>
+    html {
+      background-color: aquamarine;
+    }
+    .para {
+      margin: 50px;
+      border: 2px solid red;
+      padding: 20px;
+    }
+    #btnbox {
+      text-align: center;
+    }
+    #rbtn {
+      background-color: red;
+      color: black;
+      padding: 20px;
+      margin: 5px;
+      font-weight: bolder;
+      font-size: large;
+    }
+    #gbtn {
+      background-color: green;
+      color: black;
+      padding: 20px;
+      margin: 5px;
+      font-weight: bolder;
+      font-size: large;
+    }
+    #bbtn {
+      background-color: blue;
+      color: black;
+      padding: 20px;
+      margin: 5px;
+      font-weight: bolder;
+      font-size: large;
+    }
+    #mbtn {
+      background-color: maroon;
+      color: black;
+      padding: 20px;
+      margin: 5px;
+      font-weight: bolder;
+      font-size: large;
+    }
+    #rbtn:hover,
+    #gbtn:hover,
+    #bbtn:hover,
+    #mbtn:hover {
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <div class="para">
+      <p class="pg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        recusandae autem molestias iusto velit accusamus nemo nobis possimus
+        fugiat aperiam.
+      </p>
+      <p class="pg">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi
+        distinctio, iure reiciendis dignissimos est totam eligendi inventore
+        officiis ea!
+      </p>
+      <p class="pg">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+        temporibus libero excepturi, atque modi architecto corrupti inventore
+        neque. Officia, impedit?
+      </p>
+      <h4 style="text-align: center; color: darkgoldenrod">
+        <u
+          >CLICK ON THE RESPECTED BUTTON WILL CHANGE THE PARAGRAPH COLOR
+          ABOVE</u
+        >
+      </h4>
+      <div id="btnbox">
+        <button id="rbtn">RED</button>
+        <button id="gbtn">GREEN</button>
+        <button id="bbtn">BLUE</button>
+        <button id="mbtn">MAROON</button>
+      </div>
+    </div>
+  </body>
+</html>
